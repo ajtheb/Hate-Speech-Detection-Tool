@@ -258,9 +258,9 @@ def evaluate_model(model, testdf, tokenizer):
     predictions_df['predicted_HS'] = np.argmax(preds, axis=1)
     p = []
     for i in range(testdf.shape[0]):
-        p.append(sigmoid(preds[i])[1]*100)
+        p.append(sigmoid(preds[i])[1])
     print(p)    
-    return predictions_df['predicted_HS'], p
+    return predictions_df['predicted_HS'], predictions_df['predicted_HS']
     # model.eval()
     # all_outputs = []
     # all_probabilities = []
