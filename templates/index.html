@@ -150,7 +150,7 @@
             {% if paragraph %} 
                 {% for index, sentence, prob in sentences %}
                     {% if index in highlighted_indices %}
-                        <span class="highlighted">{{ sentence }}. </span>
+                        <span class="highlighted">{{ sentence }} </span>
                         <sup>{{ prob }}</sup>
                     {% else %}
                         {{ sentence }}.
