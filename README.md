@@ -18,6 +18,8 @@
     python app.py
     ```
 
+NOTE: It takes time to setup the trained model for the first run.
+
 ## Demo
 
 ![Demo Screenshot](demo.png)
