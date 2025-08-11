@@ -212,10 +212,10 @@ def break_paragraph_into_chunks(paragraph, k):
 
 def model_load():
 
-    # url = 'https://drive.google.com/uc?id=1aE26Pd0VehXB21GKmgMDYy2COnthrr_0'
+    url = 'https://drive.google.com/uc?id=1aE26Pd0VehXB21GKmgMDYy2COnthrr_0'
     # # url = 'https://drive.google.com/file/d/1aE26Pd0VehXB21GKmgMDYy2COnthrr_0/view?usp=drive_link'
-    # output = 'model_HS.pth'
-    # gdown.download(url, output, quiet=False)
+    output = 'model_HS.pth'
+    gdown.download(url, output, quiet=False)
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
     path="model_HS.pth"
     
